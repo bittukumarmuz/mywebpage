@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bittu Kumar | Portfolio</title>
+
+  <!-- ✅ CSS FILE CONNECTED HERE -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">BK<span class="dot">.</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content reveal">
+      <p class="hero-greeting">👋 Hello, welcome to my website</p>
+      <h1 class="hero-name">Bittu Kumar</h1>
+      <p class="hero-title">CSA Student <span class="sep">|</span> Future Software Developer</p>
+      <p class="hero-tagline">"<span id="typewriter"></span><span class="cursor">|</span>"</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span></span></div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-img reveal">
+          <div class="img-frame">
+            <div class="img-placeholder">
+              <i class="fas fa-user"></i>
+              <p>Bittu Kumar</p>
+            </div>
+          </div>
+          <div class="about-social">
+            <a href="https://github.com/bittukumarmuz" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/bittu-kumar-2a26b2346" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/bittu__boss__?igsh=MTI0cDR3ejd6eHozdw==" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p class="bio">I am a <strong>CSA student</strong> passionate about coding and technology. I am currently learning web development and programming. My goal is to become a successful software developer.</p>
+          <p class="bio">I started my journey in technology with curiosity and a passion to learn coding. Currently, I am exploring web development and building exciting projects.</p>
+          <div class="about-cards">
+            <div class="a-card">
+              <i class="fas fa-heart"></i>
+              <h4>Interests</h4>
+              <p>Coding · New Technologies · Problem Solving · Music</p>
+            </div>
+            <div class="a-card">
+              <i class="fas fa-star"></i>
+              <h4>Strengths</h4>
+              <p>Quick Learner · Hardworking · Consistent · Problem-Solver</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">My <span>Skills</span></h2>
+      <div class="skills-grid reveal">
+        <div class="skill-item"><div class="skill-info"><span>HTML</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>CSS</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>JavaScript</span><span class="skill-pct">20%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:20%"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>Java</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>Python</span><span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>GitHub</span><span class="skill-pct">35%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:35%"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>MySQL</span><span class="skill-pct">92%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>Power BI</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>Problem Solving</span><span class="skill-pct">48%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:48%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">My <span>Projects</span></h2>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-icon"><i class="fas fa-globe"></i></div>
+          <h3>Web Developer</h3>
+          <p>Responsive web development project showcasing HTML, CSS & JavaScript with modern UI design.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="project-links">
+            <a href="https://github.com/bittukumarmuz" target="_blank" class="plink"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="plink"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-icon"><i class="fab fa-java"></i></div>
+          <h3>Java Practice Programs</h3>
+          <p>Collection of Java programs covering OOP concepts, data structures, algorithms and problem solving.</p>
+          <div class="project-tags"><span>Java</span><span>OOP</span><span>DSA</span></div>
+          <div class="project-links">
+            <a href="https://github.com/bittukumarmuz" target="_blank" class="plink"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-icon"><i class="fas fa-robot"></i></div>
+          <h3>AI Chatbot</h3>
+          <p>Intelligent AI chatbot in development — exploring NLP and machine learning fundamentals.</p>
+          <div class="project-tags"><span>Python</span><span>AI/ML</span><span>NLP</span></div>
+          <div class="project-links"><span class="badge-wip">🔧 In Progress</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE SECTION ========== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal">My <span>Journey</span></h2>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2023 – Present</span>
+            <h3>CSA Student</h3>
+            <p>Pursuing Computer Science & Application. Learning programming, web development, databases, and software engineering.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2024</span>
+            <h3>Web Development Learning</h3>
+            <p>Started building responsive websites using HTML, CSS, and JavaScript. Focused on clean, user-friendly interfaces.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2024</span>
+            <h3>College Projects</h3>
+            <p>Participated in college-level projects, collaborated with peers, and applied knowledge to real-world problems.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">Future 🚀</span>
+            <h3>Software Developer</h3>
+            <p>Goal: To become a skilled software developer, contribute to open-source, and build impactful digital solutions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Get In <span>Touch</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's Connect!</h3>
+          <p>Always open to new opportunities, collaborations, and learning. Feel free to reach out!</p>
+          <div class="contact-details">
+            <div class="c-item"><i class="fas fa-user"></i><span>Bittu Kumar</span></div>
+            <div class="c-item"><i class="fas fa-envelope"></i><a href="mailto:bittukumarkathaiya@gmail.com">bittukumarkathaiya@gmail.com</a></div>
+            <div class="c-item"><i class="fas fa-map-marker-alt"></i><span>India 🇮🇳</span></div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/bittukumarmuz" target="_blank" class="soc-btn github"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/bittu-kumar-2a26b2346" target="_blank" class="soc-btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.instagram.com/bittu__boss__?igsh=MTI0cDR3ejd6eHozdw==" target="_blank" class="soc-btn insta"><i class="fab fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+
+        <!-- ✅ FORMSPREE se real email aayegi - apna formspree ID daalo -->
+        <form class="contact-form reveal" id="contactForm"
+              action="https://formspree.io/f/xvzwvwow"
+              method="POST"
+              data-turbo="false">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" name="Mobile no" placeholder="Mobile Number" />
+          </div>
+          <div class="form-group">
+            <textarea rows="5" name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-w">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+          <p class="form-success" id="formSuccess">✅ Message sent! I'll reply soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>Made with <span class="heart">❤️</span> by <strong>Bittu Kumar</strong></p>
+    <p class="footer-sub">CSA Student | Future Software Developer 🚀</p>
+    <div class="footer-links">
+      <a href="https://github.com/bittukumarmuz" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/bittu-kumar-2a26b2346" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/bittu__boss__?igsh=MTI0cDR3ejd6eHozdw==" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- ✅ JS FILE CONNECTED HERE -->
+  <script src="script.js"></script>
+
+</body>
+</html>
