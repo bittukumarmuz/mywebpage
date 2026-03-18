@@ -149,7 +149,7 @@ ul { list-style: none; }
 .hero-name {
   font-family: var(--font-head);
   font-size: clamp(4.5rem, 6.5vw, 5rem);
-  white-space: nowrap;
+  max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%
