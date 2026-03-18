@@ -148,7 +148,8 @@ ul { list-style: none; }
 }
 .hero-name {
   font-family: var(--font-head);
-  font-size: clamp(3rem, 10vw, 6rem);
+  font-size: clamp(4.5rem, 6.5vw, 5rem);
+  white-space: nowrap;
   font-weight: 800;
   line-height: 1.05;
   background: linear-gradient(135deg, #fff 0%, var(--accent) 50%, var(--accent2) 100%);
