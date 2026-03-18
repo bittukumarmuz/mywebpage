@@ -588,11 +588,20 @@ ul { list-style: none; }
   transition: all 0.3s ease;
 }
 .soc-btn:hover { transform: translateX(6px); }
-.soc-btn.github:hover  { background: #333; border-color: #555; }
-.soc-btn.linkedin:hover { background: #0077b5; border-color: #0077b5; }
-.soc-btn.insta:hover {
+.soc-btn.github {
+  background: #333;
+  border-color: #555;
+  color: #fff;
+}
+.soc-btn.linkedin {
+  background: #0077b5;
+  border-color: #0077b5;
+  color: #fff;
+}
+.soc-btn.insta {
   background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
   border-color: transparent;
+  color: #fff;
 }
 
 /* Contact Form */
