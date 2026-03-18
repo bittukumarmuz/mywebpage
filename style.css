@@ -703,6 +703,10 @@ ul { list-style: none; }
 
 /* ========== RESPONSIVE — MOBILE (max 768px) ========== */
 @media (max-width: 768px) {
+   .hero-name {
+      font-size: 8vw;
+      white-space: nowrap;
+   }
   .section { padding: 70px 0; }
   .section-title { margin-bottom: 40px; }
 
