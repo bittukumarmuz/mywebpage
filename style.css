@@ -161,6 +161,9 @@ ul { list-style: none; }
   background-clip: text;
   margin-bottom: 16px;
   letter-spacing: -2px;
+   display: flex;
+justify-content: center;
+align-items: center;
 }
 .hero-title {
   font-size: clamp(1rem, 3vw, 1.3rem);
@@ -761,4 +764,23 @@ ul { list-style: none; }
   .navbar    { padding: 14px 5%; }
   .tl-content { padding: 18px 20px; }
   .project-card { padding: 24px 20px; }
+}
+/* ========== EXTRA STYLES FOR NAME ANIMATION ========== */
+.name-box {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 16px;
+  border: 2px solid var(--accent);
+  position: relative;
+  animation: borderRotate 3s linear infinite;
+  background: transparent;
+  -webkit-text-fill-color: var(--accent);
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+@keyframes borderRotate {
+  0%   { border-color: var(--accent); }
+  50%  { border-color: var(--accent2); }
+  100% { border-color: var(--accent); }
 }
