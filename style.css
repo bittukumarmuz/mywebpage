@@ -148,22 +148,34 @@ ul { list-style: none; }
 }
 .hero-name {
   font-family: var(--font-head);
-  font-size: clamp(4.5rem, 6.5vw, 5rem);
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100%;
+  font-size: clamp(2.5rem, 6.5vw, 5rem);
   font-weight: 800;
   line-height: 1.05;
-  background: linear-gradient(135deg, #fff 0%, var(--accent) 50%, var(--accent2) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   margin-bottom: 16px;
   letter-spacing: -2px;
-   display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.name-box {
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 16px;
+  border: 2px solid var(--accent);
+  position: relative;
+  white-space: nowrap;
+  animation: borderRotate 3s linear infinite;
+  color: var(--accent);
+  -webkit-text-fill-color: var(--accent);
+  background: transparent;
+}
+
+@keyframes borderRotate {
+  0%   { border-color: var(--accent); }
+  50%  { border-color: var(--accent2); }
+  100% { border-color: var(--accent); }
 }
 .hero-title {
   font-size: clamp(1rem, 3vw, 1.3rem);
