@@ -607,8 +607,10 @@ ul { list-style: none; }
 
 /* Contact Form */
 .contact-form {
-  background: var(--card);
-  border: 1px solid var(--border);
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.896), 
+              0 0 60px rgb(255, 255, 255);
   border-radius: var(--radius);
   padding: 36px;
 }
@@ -616,7 +618,7 @@ ul { list-style: none; }
 .form-group input,
 .form-group textarea {
   width: 100%;
-  background: rgba(255,255,255,0.04);
+  background: rgba(7, 63, 229, 0.785);
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 16px 18px;
