@@ -630,7 +630,7 @@ ul { list-style: none; }
   resize: none;
 }
 .form-group input::placeholder,
-.form-group textarea::placeholder { color: ffffff; }
+.form-group textarea::placeholder { color: #ffffff; }
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: var(--accent);
