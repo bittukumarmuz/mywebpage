@@ -301,10 +301,28 @@ align-items: center;
   transition: var(--transition);
 }
 .about-social a:hover {
-  background: var(--accent);
-  color: #0a0a0f;
-  border-color: var(--accent);
   transform: translateY(-4px);
+}
+
+/* GitHub */
+.about-social a:nth-child(1) {
+  background: #333;
+  border-color: #555;
+  color: #fff;
+}
+
+/* LinkedIn */
+.about-social a:nth-child(2) {
+  background: #0077b5;
+  border-color: #0077b5;
+  color: #fff;
+}
+
+/* Instagram */
+.about-social a:nth-child(3) {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  border-color: transparent;
+  color: #fff;
 }
 .bio {
   color: var(--muted);
@@ -714,6 +732,8 @@ align-items: center;
    .hero-name {
       font-size: 6.5vw;
       white-space: nowrap;
+      overflow: hidden;
+
    }
   .section { padding: 70px 0; }
   .section-title { margin-bottom: 40px; }
