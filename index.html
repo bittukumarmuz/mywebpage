@@ -239,3 +239,105 @@
 
 </body>
 </html>
+
+<!-- NexBot Widget -->
+<style>
+  #nexbot-btn {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6c63ff, #00d4ff);
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: glowPulse 2s infinite;
+    transition: transform 0.2s ease;
+  }
+  #nexbot-btn:hover { transform: scale(1.12); }
+  @keyframes glowPulse {
+    0%   { box-shadow: 0 0 0 0 rgba(108,99,255,0.7); }
+    70%  { box-shadow: 0 0 0 16px rgba(108,99,255,0); }
+    100% { box-shadow: 0 0 0 0 rgba(108,99,255,0); }
+  }
+  #nexbot-btn::after {
+    content: "Chat with NexBot!";
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background: #1a1a2e;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    font-family: sans-serif;
+  }
+  #nexbot-btn:hover::after { opacity: 1; }
+  #nexbot-container {
+    position: fixed;
+    bottom: 105px;
+    right: 28px;
+    width: 370px;
+    height: 540px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+    z-index: 9998;
+    display: none;
+    flex-direction: column;
+    border: 2px solid #6c63ff;
+  }
+  #nexbot-container.open { display: flex; animation: slideUp 0.3s ease; }
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  #nexbot-header {
+    background: linear-gradient(135deg, #6c63ff, #00d4ff);
+    color: white;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  #nexbot-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  #nexbot-iframe { width: 100%; flex: 1; border: none; }
+</style>
+
+<button id="nexbot-btn">🤖</button>
+
+<div id="nexbot-container">
+  <div id="nexbot-header">
+    <span>🤖 NexBot AI</span>
+    <button id="nexbot-close">✕</button>
+  </div>
+  <iframe id="nexbot-iframe" src="https://nexbot-ai.onrender.com" title="NexBot"></iframe>
+</div>
+
+<script>
+  document.getElementById('nexbot-btn').addEventListener('click', () => {
+    document.getElementById('nexbot-container').classList.toggle('open');
+  });
+  document.getElementById('nexbot-close').addEventListener('click', () => {
+    document.getElementById('nexbot-container').classList.remove('open');
+  });
+</script>
